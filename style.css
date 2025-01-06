@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(24, 86%, 88%);
+  height: 100vh;
+}
+.section-m1 {
+  margin: 40px 0;
+}
+.section-p1 {
+  padding: 20px 30px;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+h6{
+    font-size: 1rem;
+    font-weight: 700;  
+}
+p {
+  font-size: 0.8rem;
+}
+
+header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+  width: 100%;
+  background-color: hsl(24, 88%, 88%);
+}
+#logo img {
+  width: 20px;
+  height: auto;
+}
+#navlinks {
+  width: 100%;
+  position: absolute;
+  flex-direction: column;
+  background-color: hsl(24, 88%, 88%);
+  box-shadow: 0px 5px 15px rgba(206, 204, 204, 0.5);
+  left: 0;
+  top: -350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: 4s;
+}
+#navlinks.active {
+  top: 0px;
+}
+#navlinks ul li {
+  list-style-type: none;
+  padding-inline: 1rem;
+  padding-block: 1rem 2rem;
+}
+#navlinks ul li a {
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+  position: relative;
+  cursor: pointer;
+}
+
+#navlinks ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: 1s;
+}
+
+#navlinks ul li a:hover::after {
+  width: 100%;
+}
+
+#navlinks ul i {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.5rem;
+  color: red;
+  font-size: 1.3rem;
+}
+
+header > i {
+  color: red;
+  font-size: 1.3rem;
+}
+
+/* Hero Section */
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+#hero p {
+  margin-top: 0.6rem;
+}
+
+.normal {
+  color: white;
+  background-color: rgb(243, 29, 29);
+  border-radius: 200px;
+  text-align: center;
+  padding: 12px 23px;
+  height: 3.125rem;
+  outline: none;
+  border: none;
+  box-shadow: 0 5px 15px hsla(353, 100%, 40%, 0.4);
+}
+#hero button {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+#hero .hero-image-box1 {
+  margin-top: 2rem;
+}
+
+#hero .hero-image-box1 img:nth-child(2) {
+  position: absolute;
+  left: 13rem;
+  width: 30px;
+  top: 12rem;
+  transform: rotate(45deg);
+}
+#hero .hero-image-box1 img:nth-child(1) {
+  left: 2rem;
+  position: absolute;
+  top: 17rem;
+  width: 30px;
+}
+#hero .home-image-box2 {
+  display: grid;
+  justify-items: center;
+  justify-self: center;
+  position: relative;
+
+}
+.ingredients{
+    animation: rotateCircle 3s infinite linear; /* Animate images in circular motion */
+    z-index:998;
+
+}
+
+/* Keyframes to animate the images in a circular path */
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg) translateX(10px) rotate(0deg); /* Starting point */
+    }
+    100% {
+        transform: rotate(360deg) translateX(10px) rotate(-360deg); /* Full circle */
+    }
+}
+#hero .home-ingredient {
+  width: 60px;
+  position: absolute;
+
+  z-index: 2;
+}
+
+#hero .home-pizza {
+  width: 300px;
+  z-index: 2;
+  position: absolute;
+  bottom: -14.9rem;
+  position: absolute;
+  left: -9.15rem;
+}
+#hero .home-board {
+  width: 300px;
+  z-index: 1;
+  position: absolute;
+  bottom: -15.5rem;
+  position: absolute;
+  left: -9.15rem;
+}
+.home-leaf-1 {
+  top: -5rem;
+}
+.home-leaf-2 {
+  left: -10rem;
+  top: 7rem;
+}
+.home-pepperoni {
+  right: -10.5rem;
+  top: 0rem;
+}
+.home-mushroom {
+  right: -10.5rem;
+  top: 7rem;
+}
+.home-olive {
+  bottom: -16rem;
+}
+
+.home-tomato {
+  left: -9rem;
+}
+
+/* about section */
+
+
+.about,.popular{
+    margin-top:7rem;
+}
+.popular h6{
+    color:red;
+    margin-top:18rem;
+
+}
