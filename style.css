@@ -226,3 +226,18 @@ header > i {
     margin-top:18rem;
 
 }
+.about{
+    width:100%;
+    position:relative;
+}
+
+.about img:first-of-type{
+    width:100%;
+    height:auto;
+}
+.about img:last-of-type{
+position:absolute;
+width:30px;
+top:9rem;
+right:2rem;
+}
