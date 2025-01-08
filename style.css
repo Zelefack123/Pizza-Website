@@ -17,6 +17,7 @@ body {
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
+  text-align: center;
 }
 h2{
     font-size: 1.5rem;
@@ -305,6 +306,7 @@ right:2rem;
 #recipe img{
   width:220px;
   margin:auto;
+  display: block;
 }
 
 #recipe .recipe-box{
@@ -313,7 +315,7 @@ right:2rem;
   align-items: center;
   margin-top:1rem;
 }
-#recipe h2{
+#recipe h2,#products h2{
   text-align: center;
 
 }
@@ -322,4 +324,129 @@ width:60px;
 }
 #recipe .recipe-details{
 width:70%;
+}
+.product-box{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:2rem;
+}
+
+
+
+#products .product-container{
+  margin-top: 3rem;
+  margin-bottom:1.5rem;
+
+}
+.product-box1 {
+    background-color: blanchedalmond;
+    width: 47%;
+    height: 150px;
+    border-radius: 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.7rem 0.5rem;
+}
+
+.product-box1 img {
+  position: absolute;
+  width: 100px;
+  top: -2rem;
+  left: 1.3rem;
+}
+
+.product-box1 img:hover{
+transform: scale(1.1);
+}
+
+
+
+.product-box1  h5{
+  padding-top: 3.5rem;
+}
+
+.product-box1 span:first-of-type{
+  font-weight: 800;
+  color:red;
+  padding-top: 0.5rem;
+
+}
+.prices{
+  display:flex;
+  justify-content: space-between;
+}
+
+.prices span:last-of-type{
+  color: white;
+  background-color: red;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px hsla(353, 100%, 40%, 0.4);
+
+}
+.contact-card{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background:rgb(152, 8, 25);
+ border-radius: 20px;
+  padding:2rem 5rem;
+
+}
+
+.contact-card1 h2{
+  font-size: 1.6rem;
+
+}
+
+
+.contact-card1 h5{
+  margin-top: 1rem;
+  font-size: 1rem;
+
+}
+
+.contact-card1 .icons{
+  color:red;
+  display: flex;
+  margin-top: 1rem;
+  padding-left:0.5rem;
+  justify-content: center;
+  margin-left:-0.5rem;
+}
+
+.contact-card1 .icons i{
+  padding-left: 0.7rem;
+  text-align: center;
+}
+.contact-card1 .map{
+  display:flex;
+  color:red;
+  margin-top: 0.5rem;
+}
+
+.contact-card1>p:first-of-type:not(){
+  padding-top:1rem;
+}
+
+#contact .contact-card1{
+  color:white;
+  text-align: center;
+  margin-bottom:2rem;
+}
+.contact-img{
+display: block;
+}
+.contact-img img{
+  width:220px;
+  margin:auto;
+
+
 }
