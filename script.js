@@ -10,3 +10,13 @@ Cross.addEventListener("click", () => {
     Navlinks.classList.remove("active");
 
 });
+
+const swiperPopular = new Swiper('.popular_swiper',{
+    loop:true,
+    grabCursor:true,
+    slidesPerview:'auto',
+    centeredSlides:'auto',
+
+})
+
+
